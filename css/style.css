@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+/* Здесь будут храниться стили нашего сайта */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+img {
+	max-width: 100%
+}
+
+
+header {
+	padding: 59px 0 22px;
+	background-color: #28A745;
+	color: #fff;
+}
+
+.header-pretitle {
+	margin-top: 102px;
+	font-weight: 700;
+}
+
+.header-title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 48px;
+	margin-top: 21px;
+}
+
+.header-subtitle {
+	/* Style for "Верстка на" */
+	margin-top: 20px;
+}
+
+.header-btn {
+	padding: 18px 56px;
+	color: #072b6f;
+	border: 0px;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 50px;
+	background-color: #ffffff;
+	transition: box-shadow 0.2s;
+	margin-top: 33px;
+}
+
+.header-btn:hover {
+	cursor: pointer;
+	box-shadow: 8px 13px 37px 6px #b20000;
+}
+
+.header-btn-block {
+	width: 195px;
+}
+
+.header-btn-block small {
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	margin-top: 9px;
+}
+
+.portfolio {
+	background-color: #ddd;
+	padding: 44px 0 71px;
+}
+
+.portfolio-block {
+	padding: 0px 41px;
+	background-color: #fff;
+	padding-bottom: 31px;
+}
+
+.portfolio-header {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.portfolio-header h2 {
+	color: #072b6f;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+}
+.portfolio-header p {
+	color: #7bb9ff;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.portfolio-project-wrap {
+	
+}
+
+.portfolio-project-item {
+	padding: 10px;
+	height: 100%;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 31px;
+}
+
+.portfolio-project-wrap h3{
+	color: #072b6f;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 16px 0 20px;
+	font-size: 18px;
+
+}
+
+.portfolio-project-wrap p{
+	color: #8f8f8f;
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+.portfolio-project-wrap a{
+	color: #072b6f;
+	font-size: 14px;
+	position: absolute;
+	font-weight: 400;
+	text-decoration: underline;
+	left: 20px;
+	bottom: 10px
+}
+
+.portfolio-project-wrap img {
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+
+footer {
+	background-color: #28A745;
+	padding: 60px 0 110px;
+}
+
+footer .footer-author {
+	padding-left: 50px;
+}
+
+footer .footer-author-h3{
+	color: #fefefe;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+footer .footer-postauthor-p{
+	margin-top: 7px;
+	color: #deedfe;
+}
+
+footer .footer-social {
+	text-align: center;
+}
+
+.footer-social p{
+	color: #deedfe;
+	margin-bottom: 20px;
+}
+
+.footer-social img{
+	margin: 0 13px;
+}
+
+.footer-social img {
+	cursor: pointer;
+}
+
+.footer-contact {
+	text-align: center;
+}
+
+.footer-contact p {
+	color: #deedfe;
+	
+}
+
+.footer-contact button {
+	color: #deedfe;
+	margin-top: 13px;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 15px 42px;
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 50px;
+}
+
+.footer-contact button {
+	cursor: pointer;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops
+	
+  */
+	* {
+		text-align: center;
+	}
+
+	.header-btn-block {
+		margin: 0 auto;
+	}
+
+	.header-pretitle {
+	margin-top: 20px;
+	}
+	.footer-contact p {
+		margin-top: 20px;
+	}
+	footer {
+	background-color: #28A745;
+	padding: 60px 0 60px;
+	}
+	footer .footer-author {
+	padding-left: 0px;
+	padding-right: 0px
+	}
+}
+
+@media (max-width:1200px) {
+	.header-pretitle {
+	margin-top: 40px;
+	}
+}
+
+@media (max-width: 720px){
+	.header-img {
+		display: none;
+	}
+	.portfolio-project-item {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+	.footer-social p{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	header {
+		padding: 22px 0;
+	}
+}
