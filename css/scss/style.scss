@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+
+$primery: #28A745;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #fff;
+	background-color: #ddd;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	transition: all .4s;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: $primery;
+	background-image: linear-gradient(-147deg, #3a7dfd 0%, #1157db 100%);
+	padding: 60px 0 20px;
+}
+
+header .container {
+	display: flex;
+}
+
+.header-img{
+	padding-left: 110px;
+}
+
+.header-text {
+	
+}
+
+header .header-pretitle {
+	margin-top: 60px;
+}
+
+header .header-title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 48px;
+	margin-top: 20px;
+}
+
+.header-posttitle {
+	margin-top: 20px;
+}
+
+.header-btn {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.header-btn .btn {
+	display: block;
+	text-decoration: none;
+	color: #072b6f;
+	background-color: #fff;
+	padding: 18px 55px; 
+	border: 1px solid transparent;
+	border-radius: 50px;
+	font-weight: 700;
+	margin-top: 33px;
+	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+}
+
+.header-btn .btn:hover {
+	border: 1px solid #fff;
+	background-color: transparent;
+	box-shadow: none;
+	color: #fff;
+}
+
+.header-btn span {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+/*Section project*/
+
+.project-wrap {
+	margin: 45px 0 70px;
+	padding: 30px 50px;
+	background-color: #fff;
+	.project-header {
+		text-align: center;
+		transition: all 1s;
+		h2 {
+			color: #072b6f;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1.8px;
+		}
+		span {
+			color: #7bb9ff;
+			font-size: 14px;
+		}
+	}
+	.project-works {
+		display: flex;
+		
+		.project-works-item {
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			.img {
+				width: 100%;
+				max-height: 200px;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				img {
+					width: 100%;
+				}
+			}
+			h3 {
+				margin-top: 30px;
+				color: #072b6f;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+			p {
+				margin-top: 20px;
+				color: #8f8f8f;
+				font-size: 14px;
+				font-weight: 400;
+			}
+			a {
+				margin: 15px 0;
+				color: #072b6f;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+		
+	}
+}
+footer {
+	background-color: #3a7dfd;
+	padding: 60px 0 110px;
+	color: #deedfe;
+	.container {
+		display: flex;
+		align-items: center;
+		.footer-author { 
+			flex: 1;
+			h5 {
+				color: #fefefe;
+				font-size: 24px;
+				font-weight: 700;
+			}
+			p {
+				margin-top: 7px;
+			}
+		}
+		.footer-socials {
+			flex: 1;
+			text-align: center;
+	
+			p {
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			.footer-socials-item {
+				display: flex;
+				justify-content: center;
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 42px;
+					height: 42px;
+					font-size: 26px;
+					color: #3a7dfd;
+					padding: 5px;
+					background: #fff;
+					border: 1px solid transparent;
+					border-radius: 50%;
+					margin: 0px 10px;
+				}
+				a:hover {
+					color: #fff;
+					background: #3a7dfd;
+					border: 1px solid #fff;
+				}
+			}
+		}
+		.footer-contact {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			.footer-btn {
+				flex-direction: column;
+				.btn {
+					text-decoration: none;
+					padding: 15px 40px;
+					display: inline-flex;
+					color: #fff;
+					border: 1px solid #fff;
+					border-radius: 50px;
+					margin-top: 10px;
+				}
+				.btn:hover {
+					border: 1px solid transparent;
+					background-color: #fff;
+					color: #3a7dfd;
+					font-weight: 700;
+					box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.container {
+		width: 100%
+	}
+}
+
+@media (max-width: 768px) {
+	.header-img{
+		display: none;
+	}
+	* {
+		text-align: center;
+	}
+
+	.header-text {
+		width: 100%
+	}
+	.project-works {
+		flex-direction: column;
+}
+
+	
+	footer {
+		padding: 40px 0 60px;
+		.container {
+			flex-direction: column;
+			.footer-socials {
+				margin: 20px 0;
+			}
+		}
+	}
+}
