@@ -1,92 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		  <!-- Важная техническая информация для браузера -->
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-			<!-- Информация об Авторе и описание проекта -->
-			<meta name="description" content="Сайт разработан Александром Березовским">
-			<meta name="auyhor" content="Александр Березовский">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-			<!-- Иконка, которая будет на вкладке в браузере -->
-			<link rel="icon" href="img/favicon.png">
-			<!-- Заголовок на вкладке в браузере -->
-			<title>Александр Березовский</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>З днюхою, братан</title>
+</head>
+<body>
+    <div class="wrapper">
 
-			<!-- Подключаем наш файл со стилями, который находится в папке css-->
-			<link rel="stylesheet" href="css/style.css">
+        <main class="main">
+                <div class="main__inner">
+                    <h1 class="main__heading anim">З<span class="mark"> днюхою</span> тебе, друже</h1>
+                    
+                    <h1 class="main__heading anim" >Живи братан собі на радість, <br>
+                        На всі проблеми хуй забий!<br>
+                        Щоб жизнь пустишкой не казалась,<br>
+                        Мочи врагів, єбись і пий!<br><br>
+        
+                        Нехай пиздатим буде щастя,<br>
+                        Живи піздато, з блиском, в кайф!<br>
+                        А слабоуміє і блядство<br>
+                        Бери і нахуй посилай!<br><br></h1>
+                </div>
+        </main>
 
-			<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
-	</head>
+       
+        
 
-	<body>
-	 <!-- Тут будет модержимое будущего сайта -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 
-	 	<header>
-	 		<div class="container">
-	 			<div class="header-img"><img src="img/main-img.png" alt=""></div>
-	 			<div class="header-text">
-	 				<p class="header-pretitle">Веб-разработчик</p>
-	 				<h1 class="header-title">Александр Березовский</h1>
-	 				<p class="header-posttitle">
-	 					Верстка на HTML/CSS<br>Разработка сайтов под ключ
-	 				</p>
-	 				<div class="header-btn"><a href="https://vk.me/alexandr2905" class="btn">Связаться</a><span>*Это бесплатно</span></div>
-	 			</div>
-	 		</div>
-	 	</header>
-
-	 	<section class="project">
-	 		<div class="container">
-	 			<div class="project-wrap">
-	 				<div class="project-header">
-	 					<h2>Портфолио</h2>
-	 					<span>Мои работы</span>
-	 				</div>
-	 				<div class="project-works">
-	 					<div class="project-works-item">
-	 						<div class="img"><img src="img/project-img-1.png" alt=""></div>
-	 						<h3>внутренний университет «Газпром нефти»</h3>
-	 						<p>У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
-	 						<a href="#">Смотреть работу</a>
-	 					</div>
-	 					<div class="project-works-item">
-	 						<div class="img"><img src="img/project-img-2.jpg" alt=""></div>
-	 						<h3>Сайт платежной системы «Мир»</h3>
-	 						<p>Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
-	 						<a href="#">Смотреть работу</a>
-	 					</div>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</section>
-
-	 	<footer>
-	 		<div class="container">
-	 			<div class="footer-author">
-	 				<h5>Александр Березовский</h5>
-	 				<p>Разработка сайтов под ключ</p>
-	 			</div>
-	 			<div class="footer-socials">
-	 				<p>Подпишитесь:</p>
-	 				<div class="footer-socials-item">
-		 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-		 				<a href="https://vk.com/alexandr2905"><i class="fab fa-vk"></i></a>
-		 				<a href="https://telegram.me/alexdev01"><i class="fab fa-telegram-plane"></i></a>
-		 				<a href="#"><i class="fab fa-youtube"></i></a>
-	 				</div>
-	 			</div>
-	 			<div class="footer-contact">
-	 				<div class="footer-btn">
-		 				<p>Напишите мне:</p>
-		 				<a href="https://vk.me/alexandr2905" class="btn">Написать</a>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</footer>
-
-	</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/core.js"></script>
+   
+</body>
 </html>
